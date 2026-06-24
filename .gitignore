@@ -1,0 +1,7 @@
+.env
+__pycache__/
+faiss_store/
+.venv/
+venv/
+*.faiss
+*.pkl
