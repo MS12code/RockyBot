@@ -1,6 +1,6 @@
 # 🥊 News Research Tool : RockyBot 📈
 
-RockyBot is a beginner-friendly GenAI-powered web application that allows users to perform news research. Users can input up to three news article URLs, extract their contents, split the text into manageable chunks, embed them, store them in a local FAISS vector database, and ask questions about the articles. The answers are generated using Retrieval-Augmented Generation (RAG) powered by LangChain, HuggingFace Embeddings, and Groq's Llama3 model.
+RockyBot is a GenAI-powered web application that allows users to perform news research. Users can input up to three news article URLs, extract their contents, split the text into manageable chunks, embed them, store them in a local FAISS vector database, and ask questions about the articles. The answers are generated using Retrieval-Augmented Generation (RAG) powered by LangChain, HuggingFace Embeddings, and Groq's Llama3 model.
 
 ---
 
