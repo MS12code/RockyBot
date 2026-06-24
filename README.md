@@ -4,6 +4,8 @@ RockyBot is a beginner-friendly GenAI-powered web application that allows users 
 
 ---
 
+Live Link : https://rockybot-9eopmokvevhakf88ayqlxp.streamlit.app/
+
 ## ✨ Features
 
 - **Multi-URL Processing**: Enter up to three news article URLs in the sidebar to process them together.
