@@ -180,9 +180,14 @@ if process_button:
         # Show a loading spinner during the whole extraction and embedding pipeline
         with st.spinner("Processing articles (downloading, chunking, and indexing)..."):
             try:
-                # 1. Load articles using UnstructuredURLLoader
-                from langchain_community.document_loaders import UnstructuredURLLoader
-                loader = UnstructuredURLLoader(urls=input_urls)
+                # 1. Load articles using WebBaseLoader with a custom User-Agent
+                from langchain_community.document_loaders import WebBaseLoader
+                loader = WebBaseLoader(
+                    web_paths=input_urls,
+                    header_template={
+                        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+                    }
+                )
                 docs = loader.load()
                 
                 if not docs or len(docs) == 0:
